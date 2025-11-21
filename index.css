@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #efe9e3;
+}
+
+#nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  width: 100%;
+  background-color: #f9f8f6;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+
+#numofcart{
+  color: white;
+  background-color: rgb(210, 4, 4);
+  padding: 1px 6px;
+  border-radius: 50px;
+  font-size: 10px;
+  position: relative;
+  right: 25px;
+  top: 7px;
+}
+
+#nav-bar h4{
+  margin: 0px;
+  font-size: 24px;
+  right: 380px;
+}
+
+#nav-bar a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+#nav-bar ul{
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+#head h1{
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#head p{
+  margin-left: 12px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#head a{
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#btn1{
+  background-color: black;
+  color: white;
+  padding: 8px 10px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#btn2{
+  border: 1px solid black;
+  padding: 8px 10px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+#bottomheader h2{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#bottom-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+
+#info{
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  max-width: 250px;
+  padding: 10px 10px;
+}
+
+#info img{
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#info h3{
+  margin: auto;
+}
+
+#info p{
+  margin: auto;
+}
+
+#info:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#text {
+  margin-top: 200px;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#text h1 {
+  font-size: 70px;
+}
+
+#text p {
+  font-size: 20px;
+}
+
+#text a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: orange;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#image img {
+  width: 600px;
+  float: right;
+  margin-left: 90px;
+}
+
+#footer-container {
+  display: grid;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: #D9CFC7;
+  padding: 20px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#footer-brand h4 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+#footer-brand p {
+  margin-top: 5px;
+  color: black;
+  text-align: center;
+}
+
+#footer-social {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#footer-social i {
+  color: black;
+  cursor: pointer;
+}
+
+#footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  color: black;
+  border-top: 1px solid black;
+  padding-top: 16px;
+}
+
+#right-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+#right-icons a i {
+  font-size: 26px;
+  color: black;
+  cursor: pointer;
+}
+
+#right-icons div i {
+  font-size: 26px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 480px){
+  #right-icons div i {
+    display: block;
+  }
+
+  #nav-bar h4 {
+    font-size: 20px;
+  }
+
+  #nav-bar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f9f8f6;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+
+  #nav-bar:hover ul {
+    display: flex;
+  }
+
+  #right-icons {
+    gap: 8px;
+  }
+  #numofcart{
+    right: 55px;
+    top: 5;
+  }
+  #image img{
+    margin-top: 20px;
+  margin-left:40px;
+  width: 300px;
+}
+}

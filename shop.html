@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+body {
+    background: #efe9e3;
+}
+
+#allgadgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+#product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease-in-out;
+}
+
+#product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+#product-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #222;
+  font-weight: 600;
+}
+
+#product-price {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.add-cart {
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-cart:hover {
+  background: #222;
+}
+
+    @media screen and (max-width: 480px) {
+        #allgadgets {
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            padding: 15px;
+        }
+
+        #product-img {
+            height: 130px;
+        }
+
+        #product-card h3 {
+            font-size: 16px;
+        }
+
+        #product-card p {
+            font-size: 15px;
+        }
+    }
+</style>
+
+
+<body>
+    <nav id="nav-bar">
+        <h4>GADGET</h4>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="right-icons">
+            <a href="./cart.html" id="icon"><i class="fa-solid fa-cart-shopping"></i></a>
+           <div id="menu-bar"><i class="fa-solid fa-bars"></i></div>
+            <span id="numofcart">0</span>
+        </div>
+
+    </nav>
+
+    <div>
+        <p id="allgadgets"></p>
+    </div>
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-brand">
+                <h4>GadgetHub</h4>
+                <p>Your source for the latest tech.</p>
+            </div>
+    
+            <div id="footer-social">
+                <h4>Join Us on</h4>
+                <div id="icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+    
+            <div id="footer-bottom">
+                <p>&copy; 2025 Gadget. All rights reserved.</p>
+            </div>
+    
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
