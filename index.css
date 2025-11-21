@@ -13,7 +13,7 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 20px 24px;
-  width: 120%;
+  width: 100%;
   background-color: #f9f8f6;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
@@ -174,7 +174,7 @@ body{
   background-color: #D9CFC7;
   padding: 20px;
   margin-top: 50px;
-  width: 120%;
+  width: 100%;
 }
 
 #footer-brand h4 {
@@ -235,6 +235,12 @@ body{
   display: none;
 }
 
+@media screen and (max-width: 768px){
+  #image img{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px){
   #right-icons div i {
     display: block;
@@ -250,7 +256,6 @@ body{
     position: absolute;
     top: 60px;
     left: 0;
-    width: 100%;
     background-color: #f9f8f6;
     text-align: center;
     padding: 15px 0;
@@ -269,8 +274,8 @@ body{
     top: 5;
   }
   #image img{
-    margin-top: 20px;
-  margin-left:40px;
+  margin-top: 20px;
+  margin-right:40px;
   width: 300px;
 }
 }

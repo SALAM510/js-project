@@ -31,6 +31,7 @@ body {
 }
 
 #nav-bar h4 {
+  margin: 0;
   font-size: 24px;
   right: 380px;
 }
